@@ -1,0 +1,241 @@
+body, h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, button
+    font-family: calibri, system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+
+// container 
+.container
+    max-width: 1170px
+    padding: 0 15px
+    margin: 0 auto
+    height: 100%
+
+// row
+.row
+    display: flex
+
+// titles and descriptions
+.h80
+    font-size: 80px
+    font-weight: bold
+.h40
+    font-size: 40px
+    font-weight: bold
+    text-transform: uppercase
+.h32
+    font-size: 32px
+.h30
+    font-size: 30px
+.h24
+    font-size: 24px
+.h20
+    font-size: 20px
+
+// colors
+.cl-brand
+    color: #ffcc00
+.cl-bg
+    color: #f6f6f6
+$brand: #ffcc00
+$bg: #f6f6f6
+
+// inputs
+.inp-1, .inp-2
+    font-size: 24px
+    width: 100%
+    border-radius: 29px
+    outline: none
+.inp-1
+    max-width: 500px
+    height: 55px
+    border: none
+    background-color: #fff
+    padding-left: 75px
+    outline: none
+    &::placeholder
+        color: #000
+.inp-2
+    height: 55px
+    max-width: 395px
+    color: #fff
+    border: 2px solid #fff
+    padding-left: 70px
+    &::placeholder
+        color: #fff
+
+
+// buttons
+.but-1, .but-2, .but-3
+    width: 100%
+    font-weight: bold
+    font-size: 24px
+    border-radius: 29px
+    text-decoration: none
+    text-transform: uppercase
+    cursor: pointer
+    transition: .2s
+    &:hover
+        transform: scale(1.05)
+
+.but-1
+    max-width: 280px
+    height: 55px
+    border: 2px solid #fff
+    background: none
+    color: #fff
+
+.but-2
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 60px
+    background: $brand
+    color: #000
+    border: none
+    letter-spacing: 2px
+    max-width: 360px
+    &:hover
+        background-color: lighten($brand, 20%)
+
+.but-3
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 500px
+    height: 60px
+    background: none
+    border: 3px solid $brand
+    letter-spacing: 1px
+    color: #000
+    &:hover
+        transform: scale(1.05)
+
+// spoiler
+.spoiler
+    &__header
+        display: flex
+        align-items: center
+        cursor: pointer
+    &__img
+        width: 20px
+        height: 19px
+    &__title
+        padding-left: 10px
+        margin: 0
+        text-decoration: underline
+    &__content
+        display: none
+@media screen and ( max-width: 1480px)
+    // titles and descriptions
+    .h80
+        font-size: 62px
+        font-weight: bold
+    // .h40
+    //     font-size: 40px
+    //     font-weight: bold
+    //     text-transform: uppercase
+    .h32
+        font-size: 26px
+    .h30
+        font-size: 22px
+    .h24
+        font-size: 20px
+    .h20
+        font-size: 18px
+
+@media screen and ( max-width: 767px)
+    .h80
+        font-size: 48px
+        font-weight: bold
+    .h40
+        font-size: 38px
+        font-weight: bold
+        text-transform: uppercase
+    .h32
+        font-size: 22px
+    .h30
+        font-size: 20px
+    .h24
+        font-size: 18px
+    .h20
+        font-size: 16px
+
+    // buttons
+    .but-1, .but-2, .but-3
+        height: 45px
+        font-size: 18px
+    .but-3
+        max-width: 400px
+
+    // inputs
+    .inp-1, .inp-2
+        height: 45px
+        max-width: 400px
+        font-size: 18px
+
+@media screen and ( max-width: 575px)
+    .h80
+        font-size: 32px
+        font-weight: bold
+    .h40
+        font-size: 28px
+        font-weight: bold
+        text-transform: uppercase
+    .h32
+        font-size: 20px
+    .h30
+        font-size: 18px
+    .h24
+        font-size: 16px
+    .h20
+        font-size: 14px
+
+    // buttons
+    .but-1, .but-2, .but-3
+        height: 45px
+        font-size: 14px
+    .but-3
+        max-width: 300px
+    // inputs
+    .inp-1, .inp-2
+        height: 45px
+        font-size: 16px
+
+
+// ===================== vertical media ========================
+@media screen and ( max-height: 790px) and (min-width: 1024px)
+    // titles and descriptions
+    .h80
+        font-size: 62px
+    // .h40
+    //     font-size: 40px
+    .h32
+        font-size: 26px
+    .h30
+        font-size: 22px
+    .h24
+        font-size: 20px
+    .h20
+        font-size: 18px
+
+@media screen and ( max-height: 680px) and (min-width: 1024px)
+    .h80
+        font-size: 48px
+    .h40
+        font-size: 38px
+    .h32
+        font-size: 22px
+    .h30
+        font-size: 20px
+    .h24
+        font-size: 18px
+    .h20
+        font-size: 16px
+
+    // buttons
+    .but-1
+        height: 45px
+        font-size: 18px
+    // inputs
+    .inp-1
+        height: 45px
+        max-width: 400px
+        font-size: 18px
